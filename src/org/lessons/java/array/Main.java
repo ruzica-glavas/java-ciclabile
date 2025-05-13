@@ -6,12 +6,10 @@ public class Main {
 
         ElencoInt numeri = new ElencoInt(new int[]{5,4,7,6});
 
-        System.out.println(numeri.getElementoSuccessivo());
-        System.out.println(numeri.getElementoSuccessivo());
-        System.out.println(numeri.getElementoSuccessivo());
-        System.out.println(numeri.getElementoSuccessivo());
-        
-        System.out.println(numeri.hasAncoraElementi());
+        while (numeri.hasAncoraElementi()) {
+            System.out.println(numeri.getElementoSuccessivo());
+        }
+
 
     }
 }

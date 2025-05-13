@@ -6,18 +6,25 @@ public class ElencoInt {
 
     //Costruttore
 
-    public ElencoInt(int[] numeriInt){
-        this.numeriInt=numeriInt;
-        posizione=0;
+    public ElencoInt(int[] elenco){
+        this.numeriInt=elenco;
+        if(this.numeriInt.length<0){
+            this.posizione=0;
+        } 
     }
 
     //Metodi
     public int getElementoSuccessivo(){
-        return numeriInt[posizione++];
+        int elemento=numeriInt[posizione];
+        posizione++;
+        return elemento;
     };
 
     public boolean hasAncoraElementi(){
-        return posizione < numeriInt.length;
+        if(numeriInt.length==0){
+            return false;
+        }
+        return posizione < this.numeriInt.length;
     }
     
 }
