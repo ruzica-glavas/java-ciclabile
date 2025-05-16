@@ -8,7 +8,7 @@ public class ElencoInt {
 
     public ElencoInt(int[] elenco){
         this.numeriInt=elenco;
-        if(this.numeriInt.length<0){
+        if(this.numeriInt.length>0){
             this.posizione=0;
         } 
     }
