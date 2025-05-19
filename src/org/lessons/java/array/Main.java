@@ -10,6 +10,18 @@ public class Main {
             System.out.println(numeri.getElementoSuccessivo());
         }
 
+        ElencoInt elenco = new ElencoInt();
+
+        elenco.addElement(10);
+        elenco.addElement(25);
+
+        while (elenco.hasAncoraElementi()) {
+            System.out.println(elenco.getElementoSuccessivo());
+        }
+        
+
+        
+
 
     }
 }

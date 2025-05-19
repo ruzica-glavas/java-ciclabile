@@ -26,5 +26,24 @@ public class ElencoInt {
         }
         return posizione < this.numeriInt.length;
     }
+
+
+    //Bonus
+    public ElencoInt(){
+        this.numeriInt=new int[0];
+    }
+
+    public void addElement(int addElement){
+        int[] newArray = new int[numeriInt.length+1];
+
+            for(int i=0; i<numeriInt.length; i++){
+                newArray[i] = numeriInt[i];
+        }
+
+        newArray[this.numeriInt.length] = addElement;
+        this.numeriInt = newArray;
     
+    }
+
+
 }
