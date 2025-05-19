@@ -10,13 +10,15 @@ public class Main {
             System.out.println(numeri.getElementoSuccessivo());
         }
 
-        ElencoInt elenco = new ElencoInt();
 
-        elenco.addElement(10);
-        elenco.addElement(25);
+        //Parte bonus
+        ElencoInt newNumeri = new ElencoInt();
 
-        while (elenco.hasAncoraElementi()) {
-            System.out.println(elenco.getElementoSuccessivo());
+        newNumeri.addElement(10);
+        newNumeri.addElement(25);
+
+        while (newNumeri.hasAncoraElementi()) {
+            System.out.println(newNumeri.getElementoSuccessivo());
         }
         
 
